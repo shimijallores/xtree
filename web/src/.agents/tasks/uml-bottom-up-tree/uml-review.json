@@ -1,0 +1,9 @@
+{
+  "verdict": "APPROVED",
+  "findings": [
+    "Non-blocking (likely): expanding a source block after layout grows the card downward without a relayout. Cards can't be dragged now, so the overlap stays, and the snapped end segment can double back. Consider relayout on a significant measured-size change.",
+    "Non-blocking (confirmed): self-edges (recursion, calls within one class) are no longer rendered. Consider a self-loop indicator.",
+    "Possible: edges that run against partition order (callee to entry, unreferenced to type) rely on ELK accepting them, otherwise the no-partition fallback is used. Check with a recursive-main case."
+  ],
+  "reviewDoc": "e:\\appbuilders\\untitled\\web\\src\\.agents\\tasks\\uml-bottom-up-tree/uml-review.md"
+}
